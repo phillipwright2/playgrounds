@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html ng-app="personalPage" lang="en">
+<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Phillip Wright</title>
+		<meta name="description" content="">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<!-- appear-->
+		<link rel="stylesheet" type="text/css" href="js-plugin/appear/nekoAnim.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+        <script src="./components/platform/platform.js"></script>
+        
+        <!-- ################    Add Angular ############# -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.js"></script>
+        <script src="app.js"></script>
+        <link rel="import" href="showme.html">
+		<!-- Favicons
+		================================================== -->
+        <!--
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		-->
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" class="activateAppearAnimation">
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper" class="localscroll">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="#">Phillip Wright</a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<ul class="nav navbar-nav pull-right">
+									<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+									<li><a href="#news"><i class="icon-comment"></i>Blog</a> </li>
+                                    <li><a href="#about"><i class="icon-users"></i>About</a> </li>
+									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+								</ul>
+							</div>
+
+						</nav>
+					</div>
+				</header>
+				<!-- header -->
+				<!-- content -->
+				<section id="home" data-stellar-background-ratio="0.5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-sm-6">
+								<div class="flexslider" id="flexHome">
+									<ul class="slides">
+										<li>
+											<h1>Phillip Wright </h1>
+											<h2>Junior Web Developer</h2>
+										</li>
+									</ul>
+								</div> 
+							</div>
+							<div class="col-lg-5 col-sm-6 hidden-xs">
+								<img width="70%" hight="70%" src="http://IMG_7652.jpg" alt="Phillip-Wright" class="img-responsive" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- call to action -->
+				<section class="color4 slice">  
+                    <div class="ctaBox ctaBoxFullwidth">
+                        <div class="container">
+                        </div>
+                    </div>
+				</section>
+				<!-- call to action -->
+				<!-- news -->
+                <section>
+                    <div class="col-lg-12">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div class="row">
+                        <DocHack-app class="col-md-4 col-md-offset-2"></DocHack-app>
+                        <p class="col-md-4" style="margin-top: 50px" >So my team and i built this project for a codeathon using
+                            betterdoctors, and Ubers API and Ionic framework. Althought
+                            it didn't win first place i do believe it was the
+                            best user-friendly app that was presented on that day.
+                            (Hope you enjoy)  </p>
+                    </div>
+                    <div class="row">
+                        <a href="./footballApp">
+                            <img src="images/news/footballApp.png" class="col-md-5 col-md-offset-2">
+                         </a>
+                        <p class="col-md-4" style="margin-top: 50px" > This is a beginners guide app for the youth trying to
+                            show them the basic fundamentals of
+                            football, and educate them in
+                            injury awareness .  </p>
+                    </div>
+                </section>
+				<section class="slice" id="news">
+					<div class="container imgHover">
+						<div class="row">
+							<div class="col-lg-12">
+								<h1>Blog</h1>
+								<h2 class="subTitle"> Web Developer | JavaScript Evandualist  </h2>
+							</div>
+
+							<article class="col-sm-4" data-nekoanim="fadeInLeftBig" data-nekodelay="100">
+
+								<section class="imgWrapper">
+									<img src="http://prod.static.steelers.clubs.nfl.com/assets/images/community/Kids_Zone_Main_Photo.jpg" class="img-responsive" alt="news" />
+								</section>
+
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+
+										<a href="http://prod.static.steelers.clubs.nfl.com/assets/images/community/Kids_Zone_Main_Photo.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a>
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>Knowledge for the youth</h3>
+									<h4 class="date">September 16</h4>
+									<p>Developing an app to teach the youth the fundamentals of football.</p>
+									<a href="blog1.html" class="portfolioSheet moreLink btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
+
+							</article>
+
+
+							<article class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="200">
+								<section class="imgWrapper">
+									<img src="http://upload.wikimedia.org/wikipedia/commons/e/e4/Source_code_in_Javascript.png" class="img-responsive" alt="snowflake template image news" />
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+										<a href="http://upload.wikimedia.org/wikipedia/commons/e/e4/Source_code_in_Javascript.png" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a>
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>JavaScript.. The Ugly!</h3>
+									<h4 class="date">September 1</h4>
+									<p>Fundamental break-downs. Part 1:My intention
+                                        is to share some of my thinking on this topic
+                                        and to hopefully encourage  people to better understand.</p>
+									<a href="blog2.html" class=" portfolioSheet moreLink btn btn-sm"><i class="icon-right-open-mini "></i>read more</a>
+								</section>
+							</article>
+							<article class="col-sm-4" data-nekoanim="fadeInRightBig" data-nekodelay="300">
+								<section class="imgWrapper"> 
+									<img src="images/news/blog3.JPG" class="img-responsive" alt="half dome" />
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="images/news/blog3.JPG" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a>
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>Coding House!</h3>
+									<h4 class="date">June 23</h4>
+									<p>I didn't know what to expect coming into this program.
+                                        Now that i'm here i realize it is one of the best decisions I have ever made.</p>
+									<a href="blog3.html" class="portfolioSheet moreLink btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
+							</article>
+                            <article class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="200">
+                                <section class="imgWrapper">
+                                    <img src="http://images.wisegeek.com/dental-needle.jpg" class="img-responsive" alt="snowflake template image news" />
+                                </section>
+                                <div class="mediaHover">
+                                    <div class="mask"></div>
+                                    <div class="iconLinks">
+                                        <a href="http://images.wisegeek.com/dental-needle.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a>
+                                    </div>
+                                </div>
+                                <section class="newsText color4">
+                                    <h3>Dependency Injection</h3>
+                                    <h4 class="date">September 1</h4>
+                                    <p>Angular has more than just a few, and
+                                       this is just one of many( Tip of the iceberg )
+                                       but a big chunck to say the least.</p>
+                                    <a href="blog4.html" class=" portfolioSheet moreLink btn btn-sm"><i class="icon-right-open-mini "></i>read more</a>
+                                </section>
+                            </article>
+                            <article class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="200">
+                                <section class="imgWrapper">
+                                    <img src="http://us.123rf.com/400wm/400/400/lightwise/lightwise1107/lightwise110700002/9979398-human-intelligence-and-brain-function-represented-by-gears-and-cogs-in-the-shape-of-a-head-represent.jpg" class="img-responsive" alt="snowflake template image news" />
+                                </section>
+                                <div class="mediaHover">
+                                    <div class="mask"></div>
+                                    <div class="iconLinks">
+                                        <a href="http://us.123rf.com/400wm/400/400/lightwise/lightwise1107/lightwise110700002/9979398-human-intelligence-and-brain-function-represented-by-gears-and-cogs-in-the-shape-of-a-head-represent.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a>
+                                    </div>
+                                </div>
+                                <section class="newsText color4">
+                                    <h3>Javascript Functions!</h3>
+                                    <h4 class="date">October 1</h4>
+                                    <p>A JavaScript function is a "canned" block of code designed to perform a particular task.
+                                        A function is executed when "something" invokes it (calls it).</p>
+                                    <a href="blog5.html" class=" portfolioSheet moreLink btn btn-sm"><i class="icon-right-open-mini "></i>read more</a>
+                                </section>
+                            </article>
+						</div>
+					</div>
+				</section>
+
+				<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+							<i class="icon-megaphone "></i>
+							<blockquote class="bigTitle">Quality is not just something you provide,
+                                <br/> it's something you love.<br/><small>ARISTOTLE</small></blockquote>
+						</div>
+					</div>
+				</div>
+
+				<section class="slice" id="about">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>About Me</h1>
+								<h2 class="subTitle">I am a very intense, and passionate computer technician.
+                                    I enjoy solving problems,synchronizing ideas, team building, and i never give up. </h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-4" data-nekoanim="fadeIn" data-nekodelay="300">
+								<img src="http://phillipwright.me/Webdeveloper.jpg" alt="services" class="img-responsive">
+							</div>
+							<div class="col-sm-4" data-nekoanim="fadeInRightBig" data-nekodelay="200">
+								<h2>.</h2>
+			                </div>
+
+							<div class="col-sm-4" data-nekoanim="fadeInRightBig" data-nekodelay="400">
+
+								<h3>Away from the computer.</h3>
+								<p>It's not often but when i do get away from my
+                                    computer i enjoy doing just about anything that
+                                    helps me work up a sweat. From sports to walking my 3 dogs or even
+                                    mowing (my) grass. I just enjoy life! </p>
+							</div>
+						</div>
+					</div>
+				</section>
+					<div id="paralaxSlice3" data-stellar-background-ratio="0.5">
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+							<div class="paralaxText">
+								<i class="icon-star iconBig"></i>
+								<blockquote class="mt15">Our greatest weakness lies in giving up.
+                                    The most certain way to succeed is always to try just one more time.
+                                    .<br/><strong>"Thomas A. Edison"</strong></blockquote>
+							</div>
+						</div>
+					</div>
+
+					<section class="slice"  id="contactSlice" data-nekoanim="fadeInUp" data-nekodelay="100">
+						<div class="container">
+							<div class="row">
+
+    							        <div class="col-sm-12">
+    								        <h1>Contacting Me</h1>
+    							        </div>
+    						        </div>
+    						</div>
+					</section>
+
+						<section  id="footerRights">
+							<div class="container">
+								<div class="row">
+                                    <div class="col-sm-6">
+                                        <p>
+                                            <a href="#bio" target="blank">Phillip Wright| Web Developer| Javascript enthusiast </a>
+                                        </p>
+                                        <p>
+                                            Copyright 2014 | All rights reserved.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="pull-right socialLinks">
+                                            <li>
+                                                <a href="https://twitter.com/bootsie8917" ><img alt="Twitter" src="img/twitter.png" class="socialIcon"></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/profile/view?id=363656050&trk=nav_responsive_tab_profile"><img alt="LinkedIn" src="img/linkedin.png" class="socialIcon"></a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:bootsie8917@gmail.com"><img alt="Email" src="img/email.png" class="socialIcon"></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/phillipwright1"><img src="img/github.png" alt="Github" class="socialIcon"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div>
+						</section>
+						<!-- End footer -->
+					</div>
+					<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+        <!--<script src="js/angular.js"></script>-->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- appear -->
+		<script type="text/javascript" src="js-plugin/appear/jquery.appear.js"></script>
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>
